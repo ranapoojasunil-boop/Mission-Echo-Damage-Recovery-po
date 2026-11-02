@@ -6,20 +6,15 @@ public final class EchoProcessor {
 
     private AcousticEchoCanceler aec;
 
-    public boolean enableAEC(int audioSessionId) {
+    public boolean enable(int audioSessionId) {
         try {
-            if (!AcousticEchoCanceler.isAvailable()) {
-                return false;
-            }
+            if (!AcousticEchoCanceler.isAvailable()) return false;
 
             aec = AcousticEchoCanceler.create(audioSessionId);
 
-            if (aec == null) {
-                return false;
-            }
+            if (aec == null) return false;
 
-            aec.setEnabled(true);
-            return aec.getEnabled();
+            return aec.setEnabled(true) == android.media.audiofx.AudioEffect.SUCCESS;
 
         } catch (Exception e) {
             return false;
