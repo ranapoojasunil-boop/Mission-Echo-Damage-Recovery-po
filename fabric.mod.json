@@ -1,0 +1,20 @@
+{
+    "schemaVersion": 1,
+    "id": "voicechat-android-fix",
+    "version": "1.0.0",
+    "name": "Voicechat Android Fix",
+    "description": "Fixes native library loading for Simple Voice Chat on Android (PojavLauncher)",
+    "authors": [],
+    "contact": {},
+    "license": "MIT",
+    "environment": "client",
+    "entrypoints": {},
+    "mixins": [
+        "voicechat-android-fix.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.15.0",
+        "minecraft": ">=1.20.1",
+        "voicechat": "*"
+    }
+}
