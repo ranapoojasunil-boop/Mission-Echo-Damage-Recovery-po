@@ -1,12 +1,13 @@
 {
-    "required": false,
-    "minVersion": "0.8",
-    "package": "com.github.voicechatfix.mixin",
-    "compatibilityLevel": "JAVA_17",
-    "client": [
-        "LibraryLoaderMixin"
-    ],
-    "injectors": {
-        "defaultRequire": 0
-    }
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "package": "com.ranapoojsunil.mixin",
+  "mixins": [
+    "VoiceChatAndroidFixMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
 }
+
