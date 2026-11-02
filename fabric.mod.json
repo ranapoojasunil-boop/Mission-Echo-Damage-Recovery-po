@@ -7,8 +7,11 @@
     "authors": [],
     "contact": {},
     "license": "MIT",
-    "environment": "client",
-    "entrypoints": {},
+    "environment": "client""entrypoints": {
+  "client": [
+    "com.ranapoojsunil.VoiceChatAndroidFix"
+  ]
+},
     "mixins": [
         "voicechat-android-fix.mixins.json"
     ],
