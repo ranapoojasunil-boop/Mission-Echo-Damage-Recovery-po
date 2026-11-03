@@ -1,0 +1,3 @@
+AcousticEchoCanceler.isAvailable();
+AcousticEchoCanceler.create(audioSessionId);
+aec.setEnabled(true);
